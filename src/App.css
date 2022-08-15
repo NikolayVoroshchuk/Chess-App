@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(45deg 3% 31%);
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile img {
+  position: relative;
+  cursor: grab;
+}
+
+.black {
+  background-color: #779556;
+}
+
+.white {
+  background-color: #ebecd0;
+}
+
+.selected {
+  background-color: #b0d839;
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #224822;
+}
+
+.lost {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(64px * 8);
+  margin: 10px 0;
+  background-color: lightgray;
+}
